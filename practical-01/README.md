@@ -89,8 +89,9 @@
 - Cloud Foundry environment;
 - SAP Build Work Zone, standard edition.
 
-<img src="images/02-btp-services.png" alt="Сервіси SAP BTP Trial" width="800">
-
+<p align="center">
+    <img src="images/02-btp-services.png" alt="Сервіси SAP BTP Trial" width="800">
+</p>
 ---
 
 ## 1.3. Створення Hello World
@@ -103,7 +104,9 @@
 
 > Результатом цього етапу повинен бути працездатний застосунок **Hello World**, запущений із SAP Business Application Studio та з SAP Build Work Zone.
 
-![Helloworld and WZ](images/03-wz-helloworld.png)
+<p align="center">
+    <img src="images/03-wz-helloworld.png" alt="Helloworld App" width="600">
+</p>
 
 ---
 
