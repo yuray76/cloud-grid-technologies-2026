@@ -321,3 +321,124 @@ SAP Business Application Studio згенерує проєкт застосунк
 Причина полягає в тому, що SAP Fiori Elements формує інтерфейс переважно на основі **OData-анотацій**. Тому наступним кроком буде налаштування локального файлу `annotation.xml`.
 
 ---
+
+# 2.9. Налаштування List Report
+
+Знайдіть у створеному проєкті файл:
+
+```text
+webapp/annotations/annotation.xml
+```
+
+> Назва або точне розташування файла може дещо відрізнятися залежно від версії SAP Fiori tools. Використовуйте файл локальних анотацій, створений генератором для OData-сервісу Northwind.
+
+## 2.9.1. Поля Filter Bar
+
+У секції:
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+```
+
+додайте анотацію `UI.SelectionFields`:
+
+```xml
+<Annotation Term="UI.SelectionFields">
+    <Collection>
+
+        <PropertyPath>CompanyName</PropertyPath>
+
+        <PropertyPath>ContactName</PropertyPath>
+
+        <PropertyPath>Country</PropertyPath>
+
+        <PropertyPath>City</PropertyPath>
+
+    </Collection>
+
+</Annotation>
+```
+
+Ця анотація визначає поля, які можуть використовуватися для фільтрації списку постачальників.
+
+---
+
+## 2.9.2. Колонки List Report
+
+Додайте анотацію `UI.LineItem`:
+
+```xml
+<Annotation Term="UI.LineItem">
+
+    <Collection>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="SupplierID" />
+
+            <PropertyValue Property="Label" String="Supplier ID" />
+
+        </Record>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="CompanyName" />
+
+            <PropertyValue Property="Label" String="Company Name" />
+
+        </Record>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="ContactName" />
+
+            <PropertyValue Property="Label" String="Contact Name" />
+
+        </Record>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="ContactTitle" />
+
+            <PropertyValue Property="Label" String="Contact Title" />
+
+        </Record>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="Country" />
+
+            <PropertyValue Property="Label" String="Country" />
+
+        </Record>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="City" />
+
+            <PropertyValue Property="Label" String="City" />
+
+        </Record>
+
+        <Record Type="UI.DataField">
+
+            <PropertyValue Property="Value" Path="Phone" />
+
+            <PropertyValue Property="Label" String="Phone" />
+
+        </Record>
+
+    </Collection>
+
+</Annotation>
+```
+
+`UI.LineItem` визначає колонки, які SAP Fiori Elements автоматично відображає в таблиці List Report.
+
+Збережіть файл та оновіть Preview.
+
+Після внесення змін у таблиці повинні з'явитися дані постачальників.
+
+<!-- SCREENSHOT 09: List Report після додавання UI.LineItem -->
+
+---
