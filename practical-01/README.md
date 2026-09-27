@@ -197,17 +197,13 @@ Northwind
 У полі **Service Path** введіть:
 
 ```text
-
 V3/Northwind/Northwind.svc/
-
 ```
 
 Після завантаження метаданих виберіть сервіс:
 
 ```text
-
 https://services.odata.org/V3/Northwind/Northwind.svc/
-
 ```
 
 <!-- SCREENSHOT 03: Data Source and Service Selection -->
@@ -217,9 +213,7 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 >
 
 > ```text
-
 > V3/Northwind/Northwind.svc/
-
 > ```
 
 >
