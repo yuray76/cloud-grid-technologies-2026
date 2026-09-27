@@ -117,3 +117,57 @@
 ---
 
 # 2. Частина 2. Створення Suppliers
+
+## 2.1. Створення Destination у SAP BTP
+
+Для доступу до зовнішнього OData-сервісу необхідно створити Destination у SAP BTP.
+
+У SAP BTP Cockpit відкрийте:
+
+**Connectivity → Destinations**
+
+та створіть новий Destination з такими параметрами:
+
+| Параметр | Значення |
+
+|---|---|
+
+| Name | `Northwind` |
+
+| Type | `HTTP` |
+
+| Description | `Northwind` |
+
+| URL | `https://services.odata.org/` |
+
+| Proxy Type | `Internet` |
+
+| Authentication | `NoAuthentication` |
+
+Додайте такі **Additional Properties**:
+
+| Property | Value |
+
+|---|---|
+
+| `HTML5.DynamicDestination` | `True` |
+
+| `HTML5.Timeout` | `60000` |
+
+| `WebIDEUsage` | `odata_gen` |
+
+| `WebIDEEnabled` | `true` |
+
+| `MobileEnabled` | `True` |
+
+| `usage` | `Backend` |
+
+> **Важливо:** у полі `URL` необхідно вказати лише базову адресу `https://services.odata.org/`. Шлях до конкретного OData-сервісу буде задано пізніше в SAP Fiori generator.
+
+Збережіть Destination.
+
+<!-- SCREENSHOT 01: Northwind Destination -->
+
+Після збереження можна скористатися кнопкою **Check Connection** для перевірки доступності сервісу.
+
+---
