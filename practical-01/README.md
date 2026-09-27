@@ -916,7 +916,7 @@ webapp/annotations/annotation.xml
 
 ## 2.12.3. Facets
 
-Додайте:
+Нижче додайте:
 
 ```xml
 <Annotation Term="UI.Facets">
@@ -944,8 +944,9 @@ Products
     ↓
 Product Object Page
 ```
-
-<!-- SCREENSHOT 12: Product Object Page -->
+<p align="center">
+    <img src="images/17-preview-application-5.png" alt="Preview Application 5" width="800">
+</p>
 
 ---
 
