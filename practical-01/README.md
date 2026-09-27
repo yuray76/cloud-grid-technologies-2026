@@ -523,9 +523,37 @@ webapp/annotations/annotation.xml
 
 ---
 
-## 2.10.2. Основна інформація
+### 2.10.2. Основна інформація
 
-Створіть групу `GeneralInformation`:
+Далі необхідно створити групу полів з основною інформацією про постачальника, яка відображатиметься на **Object Page**.
+
+У файлі `annotation.xml` знайдіть секцію анотацій для сутності `Supplier`:
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+```
+
+На цьому етапі всередині неї вже повинні знаходитися створені раніше анотації:
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+
+    <Annotation Term="UI.SelectionFields">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.LineItem">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.HeaderInfo">
+        ...
+    </Annotation>
+
+</Annotations>
+```
+
+Всередині цієї ж секції, **після `UI.HeaderInfo` і перед закриваючим тегом `</Annotations>`**, додайте нову анотацію `UI.FieldGroup` з кваліфікатором `GeneralInformation`:
 
 ```xml
 <Annotation Term="UI.FieldGroup" Qualifier="GeneralInformation">
@@ -537,22 +565,27 @@ webapp/annotations/annotation.xml
                     <PropertyValue Property="Label" String="Supplier ID" />
                     <PropertyValue Property="Value" Path="SupplierID" />
                 </Record>
+
                 <Record Type="UI.DataField">
                     <PropertyValue Property="Label" String="Company Name" />
                     <PropertyValue Property="Value" Path="CompanyName" />
                 </Record>
+
                 <Record Type="UI.DataField">
                     <PropertyValue Property="Label" String="Contact Name" />
                     <PropertyValue Property="Value" Path="ContactName" />
                 </Record>
+
                 <Record Type="UI.DataField">
                     <PropertyValue Property="Label" String="Contact Title" />
                     <PropertyValue Property="Value" Path="ContactTitle" />
                 </Record>
+
                 <Record Type="UI.DataField">
                     <PropertyValue Property="Label" String="Phone" />
                     <PropertyValue Property="Value" Path="Phone" />
                 </Record>
+
                 <Record Type="UI.DataField">
                     <PropertyValue Property="Label" String="Fax" />
                     <PropertyValue Property="Value" Path="Fax" />
@@ -562,6 +595,41 @@ webapp/annotations/annotation.xml
     </Record>
 </Annotation>
 ```
+
+Після цього структура секції `NorthwindModel.Supplier` повинна мати такий вигляд:
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+
+    <Annotation Term="UI.SelectionFields">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.LineItem">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.HeaderInfo">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.FieldGroup" Qualifier="GeneralInformation">
+        ...
+    </Annotation>
+
+</Annotations>
+```
+
+Анотація `UI.FieldGroup` з кваліфікатором `GeneralInformation` об'єднує поля з основною інформацією про постачальника:
+
+- Supplier ID;
+- Company Name;
+- Contact Name;
+- Contact Title;
+- Phone;
+- Fax.
+
+> **Зверніть увагу:** на цьому етапі ми лише **описали групу полів** `GeneralInformation`. Щоб ця група стала окремою секцією на **Object Page**, далі необхідно буде додати посилання на неї в анотації `UI.Facets`.
 
 ---
 
