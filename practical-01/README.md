@@ -157,3 +157,23 @@
 Після збереження можна скористатися кнопкою **Check Connection** для перевірки доступності сервісу.
 
 ---
+
+## 2.2. Створення SAP Fiori Elements застосунку
+
+Відкрийте **SAP Business Application Studio** та запустіть створення нового проєкту:
+
+**File → New Project from Template**
+
+<!-- SCREENSHOT 02: File → New Project from Template -->
+
+Оберіть:
+
+**SAP Fiori generator**
+
+і перейдіть до наступного кроку.
+
+Як шаблон застосунку виберіть:
+
+**List Report Page**
+
+---
