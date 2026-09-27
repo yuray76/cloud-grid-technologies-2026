@@ -1021,6 +1021,10 @@ Suppliers → Supplier → Products → Product
 
 У результаті застосунок **Suppliers** повинен бути розгорнутий у SAP BTP, доступний із SAP Build Work Zone та отримувати дані з **Northwind OData Service**.
 
+<p align="center">
+    <img src="images/18-wz-suppliers.png" alt="Preview Application 6" width="800">
+</p>
+
 ---
 
 # 2.16. Результат виконання другої частини практичної роботи
