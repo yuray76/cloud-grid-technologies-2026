@@ -461,9 +461,17 @@ webapp/annotations/annotation.xml
 
 Наступним кроком налаштуємо сторінку окремого постачальника.
 
-## 2.10.1. Заголовок Object Page
+### 2.10.1. Заголовок Object Page
 
-Додайте:
+Далі необхідно налаштувати заголовок сторінки окремого постачальника.
+
+У файлі `annotation.xml` знайдіть створену раніше секцію:
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+```
+
+Всередині цієї секції, **після анотації `UI.LineItem`**, додайте анотацію `UI.HeaderInfo`:
 
 ```xml
 <Annotation Term="UI.HeaderInfo">
@@ -484,11 +492,34 @@ webapp/annotations/annotation.xml
 </Annotation>
 ```
 
-Тепер у заголовку Object Page відображатимуться:
+Таким чином, анотація `UI.HeaderInfo` повинна знаходитися **в тій самій секції `NorthwindModel.Supplier`**, що й створені раніше `UI.SelectionFields` та `UI.LineItem`:
 
-- назва компанії;
+```xml
+<Annotations Target="NorthwindModel.Supplier">
 
-- ім'я контактної особи.
+    <Annotation Term="UI.SelectionFields">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.LineItem">
+        ...
+    </Annotation>
+
+    <Annotation Term="UI.HeaderInfo">
+        ...
+    </Annotation>
+
+</Annotations>
+```
+
+Анотація `UI.HeaderInfo` визначає інформацію, яка відображається в заголовку **Object Page**.
+
+Після додавання анотації в заголовку сторінки постачальника відображатимуться:
+
+- назва компанії (`CompanyName`);
+- ім'я контактної особи (`ContactName`).
+
+Збережіть файл та оновіть **Preview**.
 
 ---
 
