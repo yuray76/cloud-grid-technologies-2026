@@ -103,6 +103,8 @@
 
 > Результатом цього етапу повинен бути працездатний застосунок **Hello World**, запущений із SAP Business Application Studio та з SAP Build Work Zone.
 
+![Helloworld and WZ](images/03-wz-helloworld.png)
+
 ---
 
 ## 1.4. Налаштування Git/GitHub та CI/CD
