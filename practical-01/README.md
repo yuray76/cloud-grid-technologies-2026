@@ -348,7 +348,9 @@ SAP Business Application Studio згенерує проєкт застосунк
 
 - перехід до детальної інформації та пов'язаних даних ще необхідно налаштувати.
 
-<!-- SCREENSHOT 08: Початковий вигляд List Report без колонок -->
+<p align="center">
+    <img src="images/13-preview-application.png" alt="Preview Application" width="800">
+</p>
 
 Причина полягає в тому, що SAP Fiori Elements формує інтерфейс переважно на основі **OData-анотацій**. Тому наступним кроком буде налаштування локального файлу `annotation.xml`.
 
