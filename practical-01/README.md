@@ -939,7 +939,7 @@ Products
 Product Object Page
 ```
 <p align="center">
-    <img src="images/17-preview-application-5.png" alt="Preview Application 5" width="800">
+    <img src="images/17-preview-application-5.png" alt="Preview Application 5" width="500">
 </p>
 
 ---
