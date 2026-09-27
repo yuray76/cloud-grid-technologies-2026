@@ -185,17 +185,13 @@
 **Data Source:**
 
 ```text
-
 Connect to a System
-
 ```
 
 **System:**
 
 ```text
-
 Northwind
-
 ```
 
 У полі **Service Path** введіть:
