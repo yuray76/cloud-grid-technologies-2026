@@ -167,7 +167,9 @@
 
 Збережіть Destination.
 
-<!-- SCREENSHOT 01: Northwind Destination -->
+<p align="center">
+    <img src="images/05-destination-northwind.png" alt="Northwind Destination" width="800">
+</p>
 
 Після збереження можна скористатися кнопкою **Check Connection** для перевірки доступності сервісу.
 
