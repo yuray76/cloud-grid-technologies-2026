@@ -939,7 +939,7 @@ Products
 Product Object Page
 ```
 <p align="center">
-    <img src="images/17-preview-application-5.png" alt="Preview Application 5" width="500">
+    <img src="images/17-preview-application-5.png" alt="Preview Application 5" width="800">
 </p>
 
 ---
@@ -1016,7 +1016,7 @@ Suppliers → Supplier → Products → Product
 У результаті застосунок **Suppliers** повинен бути розгорнутий у SAP BTP, доступний із SAP Build Work Zone та отримувати дані з **Northwind OData Service**.
 
 <p align="center">
-    <img src="images/18-wz-suppliers.png" alt="Preview Application 6" width="800">
+    <img src="images/18-wz-suppliers.png" alt="Preview Application 6" width="500">
 </p>
 
 ---
