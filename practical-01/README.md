@@ -89,7 +89,7 @@
 - Cloud Foundry environment;
 - SAP Build Work Zone, standard edition.
 
-![Сервіси SAP BTP Trial](images/02-btp-services.png)
+<img src="images/02-btp-services.png" alt="Сервіси SAP BTP Trial" width="800">
 
 ---
 
