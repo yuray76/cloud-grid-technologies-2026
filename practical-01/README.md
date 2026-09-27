@@ -181,7 +181,9 @@
 
 **File → New Project from Template**
 
-<!-- SCREENSHOT 02: File → New Project from Template -->
+<p align="center">
+    <img src="images/06-fiori-generator.png" alt="Fiori Generator" width="800">
+</p>
 
 Оберіть:
 
@@ -192,6 +194,10 @@
 Як шаблон застосунку виберіть:
 
 **List Report Page**
+
+<p align="center">
+    <img src="images/07-list-report.png" alt="List Report Page" width="800">
+</p>
 
 ---
 
