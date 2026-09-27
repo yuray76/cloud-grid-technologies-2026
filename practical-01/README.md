@@ -780,7 +780,7 @@ webapp/annotations/annotation.xml
 
 `UI.LineItem` для сутності `Product` визначає колонки, які відображатимуться в таблиці пов'язаних товарів у секції **Products** на сторінці постачальника.
 
-та визначте `UI.LineItem`:
+Визначте `UI.LineItem`:
 
 ```xml
 <Annotation Term="UI.LineItem">
@@ -815,7 +815,9 @@ webapp/annotations/annotation.xml
 
 Після цього секція **Products** на сторінці постачальника повинна містити таблицю пов'язаних товарів.
 
-<!-- SCREENSHOT 11: Products table -->
+<p align="center">
+    <img src="images/16-preview-application-4.png" alt="Preview Application 4" width="800">
+</p>
 
 ---
 
