@@ -405,3 +405,169 @@ webapp/annotations/annotation.xml
 <!-- SCREENSHOT 09: List Report після додавання UI.LineItem -->
 
 ---
+
+# 2.10. Налаштування Object Page постачальника
+
+Наступним кроком налаштуємо сторінку окремого постачальника.
+
+## 2.10.1. Заголовок Object Page
+
+Додайте:
+
+```xml
+<Annotation Term="UI.HeaderInfo">
+    <Record Type="UI.HeaderInfoType">
+        <PropertyValue Property="TypeName" String="Supplier" />
+        <PropertyValue Property="TypeNamePlural" String="Suppliers" />
+        <PropertyValue Property="Title">
+            <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="CompanyName" />
+            </Record>
+        </PropertyValue>
+        <PropertyValue Property="Description">
+            <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="ContactName" />
+            </Record>
+        </PropertyValue>
+    </Record>
+</Annotation>
+```
+
+Тепер у заголовку Object Page відображатимуться:
+
+- назва компанії;
+
+- ім'я контактної особи.
+
+---
+
+## 2.10.2. Основна інформація
+
+Створіть групу `GeneralInformation`:
+
+```xml
+<Annotation Term="UI.FieldGroup" Qualifier="GeneralInformation">
+    <Record Type="UI.FieldGroupType">
+        <PropertyValue Property="Label" String="General Information" />
+        <PropertyValue Property="Data">
+            <Collection>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Supplier ID" />
+                    <PropertyValue Property="Value" Path="SupplierID" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Company Name" />
+                    <PropertyValue Property="Value" Path="CompanyName" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Contact Name" />
+                    <PropertyValue Property="Value" Path="ContactName" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Contact Title" />
+                    <PropertyValue Property="Value" Path="ContactTitle" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Phone" />
+                    <PropertyValue Property="Value" Path="Phone" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Fax" />
+                    <PropertyValue Property="Value" Path="Fax" />
+                </Record>
+            </Collection>
+        </PropertyValue>
+    </Record>
+</Annotation>
+```
+
+---
+
+## 2.10.3. Адреса постачальника
+
+Додайте ще одну групу:
+
+```xml
+<Annotation Term="UI.FieldGroup" Qualifier="Address">
+    <Record Type="UI.FieldGroupType">
+        <PropertyValue Property="Label" String="Address" />
+        <PropertyValue Property="Data">
+            <Collection>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Address" />
+                    <PropertyValue Property="Value" Path="Address" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="City" />
+                    <PropertyValue Property="Value" Path="City" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Region" />
+                    <PropertyValue Property="Value" Path="Region" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Postal Code" />
+                    <PropertyValue Property="Value" Path="PostalCode" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Country" />
+                    <PropertyValue Property="Value" Path="Country" />
+                </Record>
+            </Collection>
+        </PropertyValue>
+    </Record>
+</Annotation>
+```
+
+---
+
+## 2.10.4. Формування секцій Object Page
+
+Щоб створені `FieldGroup` з'явилися на Object Page, додайте `UI.Facets`:
+
+```xml
+<Annotation Term="UI.Facets">
+    <Collection>
+        <Record Type="UI.ReferenceFacet">
+            <PropertyValue
+                Property="Label"
+                String="General Information" />
+            <PropertyValue
+                Property="Target"
+                AnnotationPath="@UI.FieldGroup#GeneralInformation" />
+        </Record>
+        <Record Type="UI.ReferenceFacet">
+            <PropertyValue
+                Property="Label"
+                String="Address" />
+            <PropertyValue
+                Property="Target"
+                AnnotationPath="@UI.FieldGroup#Address" />
+        </Record>
+        <Record Type="UI.ReferenceFacet">
+            <PropertyValue
+                Property="Label"
+                String="Products" />
+            <PropertyValue
+                Property="Target"
+                AnnotationPath="Products/@UI.LineItem" />
+        </Record>
+    </Collection>
+</Annotation>
+```
+
+Третій `ReferenceFacet` використовує navigation property `Products` і створює секцію з товарами, пов'язаними з поточним постачальником.
+
+Після збереження змін відкрийте одного з постачальників.
+
+Object Page повинна містити:
+
+- **General Information**;
+
+- **Address**;
+
+- **Products**.
+
+<!-- SCREENSHOT 10: Object Page Supplier -->
+
+---
