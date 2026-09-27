@@ -66,7 +66,7 @@
 
 Для виконання першої частини практичної роботи використовується SAP Mission:
 
-**Develop a Fiori App Using the ABAP RESTful Application Programming Model (RAP)**
+**Set Up SAP BTP for Fiori/SAPUI5 and create a Hello World app**
 
 [SAP Mission — перейти до виконання](https://discovery-center.cloud.sap/protected/index.html#/mymissiondetail/125910/?tab=overview)
 
