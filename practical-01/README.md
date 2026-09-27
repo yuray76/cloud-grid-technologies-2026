@@ -258,7 +258,9 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 | Navigation Entity | `Products` |
 | Table Type | `Responsive` |
 
-<!-- SCREENSHOT 04: Entity Selection -->
+<p align="center">
+    <img src="images/09-entity-selection.png" alt="Entity Selection" width="700">
+</p>
 
 Таким чином, основною сутністю застосунку будуть постачальники (`Suppliers`), а з Object Page постачальника можна буде перейти до пов'язаних з ним товарів (`Products`).
 
@@ -272,7 +274,7 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 
 | Параметр | Значення |
 |---|---|
-| Module Name | `suppliersapp` |
+| Module Name | `suppliers` |
 | Application Title | `Suppliers App` |
 | Application Namespace | залишити порожнім |
 | Description | `An SAP Fiori application.` |
@@ -285,7 +287,9 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 
 Для **Minimum SAPUI5 Version** залиште версію, запропоновану генератором.
 
-<!-- SCREENSHOT 05: Project Attributes -->
+<p align="center">
+    <img src="images/10-project-attributes.png" alt="Project Attributes" width="700">
+</p>
 
 Натисніть **Next**.
 
@@ -297,7 +301,9 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 
 Оберіть параметри відповідно до вашого SAP BTP Trial account та Cloud Foundry space.
 
-<!-- SCREENSHOT 06: Deployment Configuration -->
+<p align="center">
+    <img src="images/11-deployment-configuration.png" alt="Deployment Configuration" width="600">
+</p>
 
 Після заповнення параметрів натисніть **Next**.
 
@@ -314,7 +320,9 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 | Title | `Suppliers` |
 | Subtitle | `KPI` |
 
-<!-- SCREENSHOT 07: SAP Fiori Launchpad Configuration -->
+<p align="center">
+    <img src="images/12-flp-configuration.png" alt="SAP Fiori Launchpad Configuration" width="600">
+</p>
 
 Натисніть **Finish**.
 
