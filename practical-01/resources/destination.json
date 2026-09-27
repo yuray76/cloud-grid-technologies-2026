@@ -1,0 +1,17 @@
+{
+    "exportTime": "2026-09-27 11:15:36.519548638",
+    "destination": {
+        "Description": "Northwind",
+        "Type": "HTTP",
+        "HTML5.DynamicDestination": "True",
+        "HTML5.Timeout": "60000",
+        "Authentication": "NoAuthentication",
+        "WebIDEUsage": "odata_gen",
+        "Name": "Northwind",
+        "WebIDEEnabled": "true",
+        "MobileEnabled": "True",
+        "ProxyType": "Internet",
+        "URL": "https://services.odata.org/",
+        "usage": "Backend"
+    }
+}
