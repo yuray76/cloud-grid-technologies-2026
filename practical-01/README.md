@@ -67,7 +67,9 @@
 3. **Create an App in Business Application**
 4. **Set Up Additional Features**
 
-![SAP Mission — Set Up SAP BTP for Fiori/SAPUI5 and create a Hello World app](images/01-sap-mission.png)
+<p align="center">
+    <img src="images/01-sap-mission.png" alt="SAP Mission — Set Up SAP BTP for Fiori/SAPUI5 and create a Hello World app" width="800">
+</p>
 
 Під час виконання Mission звертайте увагу не лише на послідовність дій, а й на призначення сервісів SAP BTP, які використовуються для створення, розгортання та публікації застосунку.
 
@@ -90,7 +92,7 @@
 - SAP Build Work Zone, standard edition.
 
 <p align="center">
-    <img src="images/02-btp-services.png" alt="Сервіси SAP BTP Trial" width="800">
+    <img src="images/02-btp-services.png" alt="Сервіси SAP BTP Trial" width="600">
 </p>
 ---
 
@@ -105,7 +107,7 @@
 > Результатом цього етапу повинен бути працездатний застосунок **Hello World**, запущений із SAP Business Application Studio та з SAP Build Work Zone.
 
 <p align="center">
-    <img src="images/03-wz-helloworld.png" alt="Helloworld App" width="400">
+    <img src="images/03-wz-helloworld.png" alt="Helloworld App" width="300">
 </p>
 
 ---
