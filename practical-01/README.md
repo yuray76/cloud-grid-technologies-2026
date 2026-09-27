@@ -673,7 +673,7 @@ webapp/annotations/annotation.xml
 
 ## 2.10.4. Формування секцій Object Page
 
-Щоб створені `FieldGroup` з'явилися на Object Page, додайте `UI.Facets`:
+Щоб створені `FieldGroup` з'явилися на Object Page, додайте нижче `UI.Facets`:
 
 ```xml
 <Annotation Term="UI.Facets">
