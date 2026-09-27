@@ -821,11 +821,32 @@ webapp/annotations/annotation.xml
 
 ---
 
-# 2.12. Налаштування Object Page товару
+## 2.12. Налаштування Object Page товару
 
-Для можливості переходу з таблиці Products на сторінку окремого товару додайте для `NorthwindModel.Product` необхідні анотації.
+Для можливості переходу з таблиці **Products** на сторінку окремого товару додайте для `NorthwindModel.Product` необхідні анотації.
+
+Усі наведені нижче анотації додавайте в уже створену секцію:
+
+```xml
+<Annotations Target="NorthwindModel.Product">
+```
+
+**після анотації `UI.LineItem`.**
+
+Таким чином, структура секції матиме такий вигляд:
+
+```xml
+<Annotations Target="NorthwindModel.Product">
+    <Annotation Term="UI.LineItem">
+        ...
+    </Annotation>
+    <!-- Анотації Object Page товару додаються тут -->
+</Annotations>
+```
 
 ## 2.12.1. HeaderInfo
+
+Додайте після `UI.LineItem`:
 
 ```xml
 <Annotation Term="UI.HeaderInfo">
@@ -847,6 +868,8 @@ webapp/annotations/annotation.xml
 ```
 
 ## 2.12.2. General Information
+
+Додайте після `UI.HeaderInfo`:
 
 ```xml
 <Annotation Term="UI.FieldGroup" Qualifier="GeneralInformation">
