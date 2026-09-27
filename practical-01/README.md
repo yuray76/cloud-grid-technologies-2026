@@ -119,3 +119,18 @@
 > Результатом цього етапу повинен бути працездатний застосунок **Hello World**, запущений із SAP Business Application Studio та з SAP Build Work Zone.
 
 ---
+
+## 5. Налаштування Git/GitHub та CI/CD
+
+Перейдіть до етапу Mission:
+
+**Set Up Additional Features**
+
+Виконайте два кроки:
+
+1. **Enable Git and Add a Remote Repository** — налаштуйте Git для проєкту та підключіть віддалений репозиторій GitHub.
+2. **Setup Continuous Integration and Delivery Service CI/CD** — налаштуйте CI/CD для автоматичного збирання та розгортання застосунку.
+
+> **Примітка:** у SAP Mission ці кроки позначені як *Optional*, однак у межах практичної роботи їх виконання є обов'язковим.
+
+---
