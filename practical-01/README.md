@@ -126,8 +126,9 @@
 > **Примітка:** у SAP Mission ці кроки позначені як *Optional*, однак у межах практичної роботи їх виконання є обов'язковим.
 
 <p align="center">
-    <img src="images/04-cicd-jobs.png" alt="Continuous Integration and Delivery"300">
+    <img src="images/04-cicd-jobs.png" alt="Continuous Integration and Delivery="600">
 </p>
+
 ---
 
 # 2. Частина 2. Створення Suppliers
