@@ -724,15 +724,61 @@ Object Page повинна містити:
 
 ---
 
-# 2.11. Налаштування таблиці Products
+## 2.11. Налаштування таблиці Products
 
 Тепер необхідно описати представлення сутності `Product`.
 
-Додайте:
+У файлі:
+
+```text
+webapp/annotations/annotation.xml
+```
+
+**після завершення секції**
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+    ...
+</Annotations>
+```
+
+створіть **нову окрему секцію** для сутності `Product`:
 
 ```xml
 <Annotations Target="NorthwindModel.Product">
 ```
+
+> **Важливо:** секція `NorthwindModel.Product` створюється на тому самому рівні, що й `NorthwindModel.Supplier`, усередині `<Schema>`. Її не потрібно вкладати в секцію `NorthwindModel.Supplier`.
+
+У створеній секції визначте анотацію `UI.LineItem`:
+
+```xml
+<Annotation Term="UI.LineItem">
+    ...
+</Annotation>
+```
+
+Таким чином, загальна структура файла повинна мати такий вигляд:
+
+```xml
+<Schema ...>
+
+    <Annotations Target="NorthwindModel.Supplier">
+        ...
+    </Annotations>
+
+    <Annotations Target="NorthwindModel.Product">
+
+        <Annotation Term="UI.LineItem">
+            ...
+        </Annotation>
+
+    </Annotations>
+
+</Schema>
+```
+
+`UI.LineItem` для сутності `Product` визначає колонки, які відображатимуться в таблиці пов'язаних товарів у секції **Products** на сторінці постачальника.
 
 та визначте `UI.LineItem`:
 
