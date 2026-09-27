@@ -451,7 +451,9 @@ webapp/annotations/annotation.xml
 
 Після внесення змін у таблиці повинні з'явитися дані постачальників.
 
-<!-- SCREENSHOT 09: List Report після додавання UI.LineItem -->
+<p align="center">
+    <img src="images/14-preview-application-2.png" alt="Preview Application 2" width="800">
+</p>
 
 ---
 
