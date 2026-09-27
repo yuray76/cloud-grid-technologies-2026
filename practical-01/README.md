@@ -177,3 +177,77 @@
 **List Report Page**
 
 ---
+
+## 2.3. Підключення OData-сервісу
+
+На кроці **Data Source and Service Selection** встановіть:
+
+**Data Source:**
+
+```text
+
+Connect to a System
+
+```
+
+**System:**
+
+```text
+
+Northwind
+
+```
+
+У полі **Service Path** введіть:
+
+```text
+
+V3/Northwind/Northwind.svc/
+
+```
+
+Після завантаження метаданих виберіть сервіс:
+
+```text
+
+https://services.odata.org/V3/Northwind/Northwind.svc/
+
+```
+
+<!-- SCREENSHOT 03: Data Source and Service Selection -->
+
+> **Важливо:** у цій практичній роботі використовується саме **Northwind OData V3**:
+
+>
+
+> ```text
+
+> V3/Northwind/Northwind.svc/
+
+> ```
+
+>
+
+> Не використовуйте `V4/Northwind/Northwind.svc/`.
+
+Натисніть **Next**.
+
+---
+
+## 2.4. Вибір сутностей
+
+На кроці **Entity Selection** встановіть:
+
+| Параметр | Значення |
+|---|---|
+| Main Entity | `Suppliers` |
+| Navigation Entity | `Products` |
+| Table Type | `Responsive` |
+
+<!-- SCREENSHOT 04: Entity Selection -->
+
+Таким чином, основною сутністю застосунку будуть постачальники (`Suppliers`), а з Object Page постачальника можна буде перейти до пов'язаних з ним товарів (`Products`).
+
+Натисніть **Next**.
+
+---
