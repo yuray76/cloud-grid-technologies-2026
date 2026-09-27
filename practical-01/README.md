@@ -241,3 +241,59 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 Натисніть **Next**.
 
 ---
+
+## 2.5. Налаштування проєкту
+
+На кроці **Project Attributes** задайте:
+
+| Параметр | Значення |
+|---|---|
+| Module Name | `suppliersapp` |
+| Application Title | `Suppliers App` |
+| Application Namespace | залишити порожнім |
+| Description | `An SAP Fiori application.` |
+| Project Folder Path | `/home/user/projects` |
+| Enable TypeScript | `No` |
+| Add Deployment Configuration | `Yes` |
+| Add SAP Fiori Launchpad Configuration | `Yes` |
+| Use Virtual Endpoints for Local Preview | `No` |
+| Configure Advanced Options | `No` |
+
+Для **Minimum SAPUI5 Version** залиште версію, запропоновану генератором.
+
+<!-- SCREENSHOT 05: Project Attributes -->
+
+Натисніть **Next**.
+
+---
+
+## 2.6. Deployment Configuration
+
+На кроці **Deployment Configuration** налаштуйте розгортання застосунку в SAP BTP Cloud Foundry.
+
+Оберіть параметри відповідно до вашого SAP BTP Trial account та Cloud Foundry space.
+
+<!-- SCREENSHOT 06: Deployment Configuration -->
+
+Після заповнення параметрів натисніть **Next**.
+
+---
+
+## 2.7. SAP Fiori Launchpad Configuration
+
+На кроці **SAP Fiori Launchpad Configuration** задайте:
+
+| Параметр | Значення |
+|---|---|
+| Semantic Object | `suppliersapp` |
+| Action | `display` |
+| Title | `Suppliers` |
+| Subtitle | `KPI` |
+
+<!-- SCREENSHOT 07: SAP Fiori Launchpad Configuration -->
+
+Натисніть **Finish**.
+
+SAP Business Application Studio згенерує проєкт застосунку.
+
+---
