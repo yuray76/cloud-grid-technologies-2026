@@ -48,7 +48,7 @@
 
 ---
 
-# 1. Частина 1. SAP Mission та Hello World
+# Частина 1. SAP Mission та Hello World
 
 ## 1.1. Виконання SAP Mission
 
@@ -131,7 +131,7 @@
 
 ---
 
-# 2. Частина 2. Створення застосунку Suppliers
+# Частина 2. Створення застосунку Suppliers
 
 ## 2.1. Створення Destination у SAP BTP
 
