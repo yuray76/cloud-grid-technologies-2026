@@ -89,6 +89,8 @@
 - Cloud Foundry environment;
 - SAP Build Work Zone, standard edition.
 
+![Сервіси SAP BTP Trial](images/02-btp-services.png)
+
 ---
 
 ## 1.3. Створення Hello World
