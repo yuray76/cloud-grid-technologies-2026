@@ -85,3 +85,43 @@
 Під час виконання Mission звертайте увагу не лише на послідовність дій, а й на призначення сервісів SAP BTP, які використовуються для створення, розгортання та публікації застосунку.
 
 ---
+
+# 3. Підготовка SAP BTP Trial
+
+Виконайте етап:
+
+**Setup Trial Account for HTML5 Development**
+
+Переконайтеся, що SAP BTP Trial Account підготовлений для HTML5-розробки та доступні необхідні сервіси.
+
+Для подальшої роботи необхідно мати доступ до:
+
+- Cloud Identity Services;
+
+- Continuous Integration & Delivery;
+
+- SAP Business Application Studio;
+
+- Cloud Foundry environment;
+
+- SAP Build Work Zone, standard edition;
+
+- сервісів, необхідних для розгортання HTML5-застосунків.
+
+---
+
+# 4. Створення Hello World
+
+Перейдіть до етапу Mission:
+
+**Create an App in Business Application**
+
+Відкрийте **SAP Business Application Studio** та виконайте кроки Mission зі створення тестового застосунку.
+
+Після створення застосунку виконайте його локальний запуск.
+
+Переконайтеся, що застосунок коректно відкривається у браузері.
+
+> Результатом цього етапу повинен бути працездатний застосунок **Hello World**, запущений із SAP Business Application Studio.
+
+---
