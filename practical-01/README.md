@@ -112,7 +112,7 @@
 
 Перейдіть до етапу Mission:
 
-**Create an App in Business Application**
+**Create an App in Business Application Studio**
 
 Відкрийте **SAP Business Application Studio** та виконайте кроки Mission зі створення тестового застосунку.
 
