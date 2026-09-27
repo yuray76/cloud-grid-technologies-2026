@@ -401,7 +401,14 @@ webapp/annotations/annotation.xml
 
 ## 2.9.2. Колонки List Report
 
-Додайте анотацію `UI.LineItem`:
+Далі необхідно визначити колонки, які відображатимуться в таблиці постачальників на сторінці **List Report**.
+
+У файлі `annotation.xml` знайдіть створену на попередньому кроці секцію:
+
+```xml
+<Annotations Target="NorthwindModel.Supplier">
+```
+Всередині цієї секції, після анотації UI.SelectionFields, додайте анотацію UI.LineItem:
 
 ```xml
 <Annotation Term="UI.LineItem">
