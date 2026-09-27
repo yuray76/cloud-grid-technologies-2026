@@ -718,7 +718,9 @@ Object Page повинна містити:
 
 - **Products**.
 
-<!-- SCREENSHOT 10: Object Page Supplier -->
+<p align="center">
+    <img src="images/15-preview-application-3.png" alt="Preview Application 3" width="800">
+</p>
 
 ---
 
