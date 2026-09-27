@@ -635,7 +635,7 @@ webapp/annotations/annotation.xml
 
 ## 2.10.3. Адреса постачальника
 
-Додайте ще одну групу:
+Після створеної на попередньому кроці групи GeneralInformation додайте ще одну анотацію UI.FieldGroup з кваліфікатором Address:
 
 ```xml
 <Annotation Term="UI.FieldGroup" Qualifier="Address">
