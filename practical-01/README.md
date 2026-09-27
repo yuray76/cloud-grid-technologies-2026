@@ -104,9 +104,7 @@
 
 - Cloud Foundry environment;
 
-- SAP Build Work Zone, standard edition;
-
-- сервісів, необхідних для розгортання HTML5-застосунків.
+- SAP Build Work Zone, standard edition.
 
 ---
 
