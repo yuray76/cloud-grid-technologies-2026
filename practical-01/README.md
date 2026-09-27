@@ -345,17 +345,11 @@ webapp/annotations/annotation.xml
 ```xml
 <Annotation Term="UI.SelectionFields">
     <Collection>
-
         <PropertyPath>CompanyName</PropertyPath>
-
         <PropertyPath>ContactName</PropertyPath>
-
         <PropertyPath>Country</PropertyPath>
-
         <PropertyPath>City</PropertyPath>
-
     </Collection>
-
 </Annotation>
 ```
 
@@ -369,67 +363,36 @@ webapp/annotations/annotation.xml
 
 ```xml
 <Annotation Term="UI.LineItem">
-
     <Collection>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="SupplierID" />
-
             <PropertyValue Property="Label" String="Supplier ID" />
-
         </Record>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="CompanyName" />
-
             <PropertyValue Property="Label" String="Company Name" />
-
         </Record>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="ContactName" />
-
             <PropertyValue Property="Label" String="Contact Name" />
-
         </Record>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="ContactTitle" />
-
             <PropertyValue Property="Label" String="Contact Title" />
-
         </Record>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="Country" />
-
             <PropertyValue Property="Label" String="Country" />
-
         </Record>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="City" />
-
             <PropertyValue Property="Label" String="City" />
-
         </Record>
-
         <Record Type="UI.DataField">
-
             <PropertyValue Property="Value" Path="Phone" />
-
             <PropertyValue Property="Label" String="Phone" />
-
         </Record>
-
     </Collection>
-
 </Annotation>
 ```
 
