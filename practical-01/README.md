@@ -368,13 +368,21 @@ webapp/annotations/annotation.xml
 
 ## 2.9.1. Поля Filter Bar
 
-У секції:
+У файлі `annotation.xml` знайдіть елемент:
+
+```xml
+<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+</Schema>
+```
+
+Всередині елемента <Schema> створіть секцію анотацій для сутності Supplier:
 
 ```xml
 <Annotations Target="NorthwindModel.Supplier">
+</Annotations>
 ```
 
-додайте анотацію `UI.SelectionFields`:
+Після цього всередині створеної секції додайте анотацію UI.SelectionFields:
 
 ```xml
 <Annotation Term="UI.SelectionFields">
