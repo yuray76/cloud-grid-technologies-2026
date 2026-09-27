@@ -288,7 +288,7 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 Для **Minimum SAPUI5 Version** залиште версію, запропоновану генератором.
 
 <p align="center">
-    <img src="images/10-project-attributes.png" alt="Project Attributes" width="700">
+    <img src="images/10-project-attributes.png" alt="Project Attributes" width="600">
 </p>
 
 Натисніть **Next**.
@@ -302,7 +302,7 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 Оберіть параметри відповідно до вашого SAP BTP Trial account та Cloud Foundry space.
 
 <p align="center">
-    <img src="images/11-deployment-configuration.png" alt="Deployment Configuration" width="600">
+    <img src="images/11-deployment-configuration.png" alt="Deployment Configuration" width="500">
 </p>
 
 Після заповнення параметрів натисніть **Next**.
@@ -321,7 +321,7 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
 | Subtitle | `KPI` |
 
 <p align="center">
-    <img src="images/12-flp-configuration.png" alt="SAP Fiori Launchpad Configuration" width="600">
+    <img src="images/12-flp-configuration.png" alt="SAP Fiori Launchpad Configuration" width="500">
 </p>
 
 Натисніть **Finish**.
