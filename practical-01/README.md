@@ -64,9 +64,13 @@
 
 # 2. Частина 1. Виконання SAP Mission
 
-Для виконання першої частини роботи використовуйте SAP Mission, надану викладачем.
+Для виконання першої частини практичної роботи використовується SAP Mission:
 
-> **Важливо:** проходити всю Mission не потрібно. Необхідно виконати лише зазначені нижче етапи.
+**Develop a Fiori App Using the ABAP RESTful Application Programming Model (RAP)**
+
+[SAP Mission — перейти до виконання](https://discovery-center.cloud.sap/protected/index.html#/mymissiondetail/125910/?tab=overview)
+
+> **Важливо:** проходити всю SAP Mission не потрібно. У межах практичної роботи необхідно виконати лише зазначені нижче етапи.
 
 Необхідно опрацювати такі частини Mission:
 
