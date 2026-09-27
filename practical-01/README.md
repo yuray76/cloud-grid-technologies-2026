@@ -105,7 +105,7 @@
 > Результатом цього етапу повинен бути працездатний застосунок **Hello World**, запущений із SAP Business Application Studio та з SAP Build Work Zone.
 
 <p align="center">
-    <img src="images/03-wz-helloworld.png" alt="Helloworld App" width="600">
+    <img src="images/03-wz-helloworld.png" alt="Helloworld App" width="400">
 </p>
 
 ---
