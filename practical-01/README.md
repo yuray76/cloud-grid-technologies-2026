@@ -207,19 +207,16 @@
 На кроці **Data Source and Service Selection** встановіть:
 
 **Data Source:**
-
 ```text
 Connect to a System
 ```
 
 **System:**
-
 ```text
 Northwind
 ```
 
 У полі **Service Path** введіть:
-
 ```text
 V3/Northwind/Northwind.svc/
 ```
@@ -233,15 +230,11 @@ https://services.odata.org/V3/Northwind/Northwind.svc/
     <img src="images/08-data-source-and-service-selection.png" alt="Data Source and Service Selection" width="700">
 </p>
 
-> **Важливо:** у цій практичній роботі використовується саме **Northwind OData V3**:
-
->
+> **Важливо:** у цій практичній роботі використовується **Northwind OData Service** за шляхом `V3/Northwind/Northwind.svc/`.
 
 > ```text
 > V3/Northwind/Northwind.svc/
 > ```
-
->
 
 > Не використовуйте `V4/Northwind/Northwind.svc/`.
 
