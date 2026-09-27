@@ -571,3 +571,157 @@ Object Page повинна містити:
 <!-- SCREENSHOT 10: Object Page Supplier -->
 
 ---
+
+# 2.11. Налаштування таблиці Products
+
+Тепер необхідно описати представлення сутності `Product`.
+
+Додайте:
+
+```xml
+<Annotations Target="NorthwindModel.Product">
+```
+
+та визначте `UI.LineItem`:
+
+```xml
+<Annotation Term="UI.LineItem">
+    <Collection>
+        <Record Type="UI.DataField">
+            <PropertyValue Property="Label" String="Product ID" />
+            <PropertyValue Property="Value" Path="ProductID" />
+        </Record>
+        <Record Type="UI.DataField">
+            <PropertyValue Property="Label" String="Product Name" />
+            <PropertyValue Property="Value" Path="ProductName" />
+        </Record>
+        <Record Type="UI.DataField">
+            <PropertyValue Property="Label" String="Quantity Per Unit" />
+            <PropertyValue Property="Value" Path="QuantityPerUnit" />
+        </Record>
+        <Record Type="UI.DataField">
+            <PropertyValue Property="Label" String="Unit Price" />
+            <PropertyValue Property="Value" Path="UnitPrice" />
+        </Record>
+        <Record Type="UI.DataField">
+            <PropertyValue Property="Label" String="Units In Stock" />
+            <PropertyValue Property="Value" Path="UnitsInStock" />
+        </Record>
+        <Record Type="UI.DataField">
+            <PropertyValue Property="Label" String="Discontinued" />
+            <PropertyValue Property="Value" Path="Discontinued" />
+        </Record>
+    </Collection>
+</Annotation>
+```
+
+Після цього секція **Products** на сторінці постачальника повинна містити таблицю пов'язаних товарів.
+
+<!-- SCREENSHOT 11: Products table -->
+
+---
+
+# 2.12. Налаштування Object Page товару
+
+Для можливості переходу з таблиці Products на сторінку окремого товару додайте для `NorthwindModel.Product` необхідні анотації.
+
+## 2.12.1. HeaderInfo
+
+```xml
+<Annotation Term="UI.HeaderInfo">
+    <Record Type="UI.HeaderInfoType">
+        <PropertyValue Property="TypeName" String="Product" />
+        <PropertyValue Property="TypeNamePlural" String="Products" />
+        <PropertyValue Property="Title">
+            <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="ProductName" />
+            </Record>
+        </PropertyValue>
+        <PropertyValue Property="Description">
+            <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="QuantityPerUnit" />
+            </Record>
+        </PropertyValue>
+    </Record>
+</Annotation>
+```
+
+## 2.12.2. General Information
+
+```xml
+<Annotation Term="UI.FieldGroup" Qualifier="GeneralInformation">
+    <Record Type="UI.FieldGroupType">
+        <PropertyValue Property="Data">
+            <Collection>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Product ID" />
+                    <PropertyValue Property="Value" Path="ProductID" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Product Name" />
+                    <PropertyValue Property="Value" Path="ProductName" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Quantity Per Unit" />
+                    <PropertyValue Property="Value" Path="QuantityPerUnit" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Unit Price" />
+                    <PropertyValue Property="Value" Path="UnitPrice" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Units In Stock" />
+                    <PropertyValue Property="Value" Path="UnitsInStock" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Units On Order" />
+                    <PropertyValue Property="Value" Path="UnitsOnOrder" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Reorder Level" />
+                    <PropertyValue Property="Value" Path="ReorderLevel" />
+                </Record>
+                <Record Type="UI.DataField">
+                    <PropertyValue Property="Label" String="Discontinued" />
+                    <PropertyValue Property="Value" Path="Discontinued" />
+                </Record>
+            </Collection>
+        </PropertyValue>
+    </Record>
+</Annotation>
+```
+
+## 2.12.3. Facets
+
+Додайте:
+
+```xml
+<Annotation Term="UI.Facets">
+    <Collection>
+        <Record Type="UI.ReferenceFacet">
+            <PropertyValue
+                Property="Label"
+                String="General Information" />
+            <PropertyValue
+                Property="Target"
+                AnnotationPath="@UI.FieldGroup#GeneralInformation" />
+        </Record>
+    </Collection>
+</Annotation>
+```
+
+Після збереження змін перевірте перехід:
+
+```text
+Suppliers
+    ↓
+Supplier Object Page
+    ↓
+Products
+    ↓
+Product Object Page
+```
+
+<!-- SCREENSHOT 12: Product Object Page -->
+
+---
