@@ -94,6 +94,7 @@
 <p align="center">
     <img src="images/02-btp-services.png" alt="Сервіси SAP BTP Trial" width="600">
 </p>
+
 ---
 
 ## 1.3. Створення Hello World
