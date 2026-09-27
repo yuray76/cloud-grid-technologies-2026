@@ -67,6 +67,8 @@
 3. **Create an App in Business Application**
 4. **Set Up Additional Features**
 
+![SAP Mission — Set Up SAP BTP for Fiori/SAPUI5 and create a Hello World app](images/01-sap-mission.png)
+
 Під час виконання Mission звертайте увагу не лише на послідовність дій, а й на призначення сервісів SAP BTP, які використовуються для створення, розгортання та публікації застосунку.
 
 ---
