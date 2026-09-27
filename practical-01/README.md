@@ -229,7 +229,7 @@ V3/Northwind/Northwind.svc/
 https://services.odata.org/V3/Northwind/Northwind.svc/
 ```
 <p align="center">
-    <img src="images/08-data-source-and-service-selection.png" alt="Data Source and Service Selection" width="800">
+    <img src="images/08-data-source-and-service-selection.png" alt="Data Source and Service Selection" width="700">
 </p>
 
 > **Важливо:** у цій практичній роботі використовується саме **Northwind OData V3**:
