@@ -1075,7 +1075,7 @@ Suppliers → Supplier → Products → Product
 Натисніть **Create**.
 
 <p align="center">
-    <img src="images/20-default-idp-user.png" alt="Preview Application 6" width="300">
+    <img src="images/20-default-idp-user.png" alt="Create Default IdP User" width="800">
 </p>
 
 У формі створення користувача вкажіть:
@@ -1091,6 +1091,32 @@ Suppliers → Supplier → Products → Product
 Переконайтеся, що користувач `y.yeroshkin@temabit.com` з'явився у списку **Platform Users**.
 
 > **Важливо:** створення користувача ще не надає йому необхідних прав для перевірки практичної роботи. На наступному кроці необхідно призначити відповідні **Role Collections**.
+
+---
+
+### 3.1. Надання повноважень Platform User
+
+Після створення **Platform User** необхідно надати йому повноваження для доступу до SAP BTP subaccount.
+
+Відкрийте створеного користувача `y.yeroshkin@temabit.com` та перейдіть на вкладку:
+
+**Role Collections**
+
+Натисніть **Assign Role Collection**.
+
+У списку доступних колекцій ролей виберіть:
+
+**Subaccount Administrator**
+
+та натисніть **Assign Role Collection**.
+
+<p align="center">
+    <img src="images/21-default-idp-role.png" alt="Assign Admin role" width="800">
+</p>
+
+> **Важливо:** переконайтеся, що після призначення ролі **Subaccount Administrator** відображається у списку **Role Collections** користувача.
+
+Після цього користувач `y.yeroshkin@temabit.com` матиме необхідні повноваження для доступу до subaccount та перевірки його налаштувань.
 
 ## Структура матеріалів практичної роботи
 
