@@ -1124,7 +1124,7 @@ Suppliers → Supplier → Products → Product
 
 Для перевірки опублікованих застосунків у **SAP Build Work Zone** необхідно створити бізнес-користувача:
 
-**yeroshkin.yurii@edu.kpi.ua**
+`yeroshkin.yurii@edu.kpi.ua`
 
 Створення користувача виконується у два етапи:
 
@@ -1177,7 +1177,7 @@ Suppliers → Supplier → Products → Product
 
 Після створення користувача вийдіть із **SAP Cloud Identity Services** та поверніться до **SAP BTP Cockpit**.
 
-> **Важливо:** переконайтеся, що користувач `yeroshkin.yurii@edu.kpi.ua` успішно створений та активний у Custom Identity Provider.
+
 
 ### 3.3.2. Додавання користувача до SAP BTP subaccount
 
