@@ -342,7 +342,7 @@ SAP Business Application Studio згенерує проєкт застосунк
 
 ---
 
-# 2.8. Перший запуск застосунку
+## 2.8. Перший запуск застосунку
 
 Після завершення генерації виконайте Preview застосунку.
 
@@ -368,7 +368,7 @@ SAP Business Application Studio згенерує проєкт застосунк
 
 ---
 
-# 2.9. Налаштування List Report
+## 2.9. Налаштування List Report
 
 Знайдіть у створеному проєкті файл:
 
@@ -378,7 +378,7 @@ webapp/annotations/annotation.xml
 
 > Назва або точне розташування файла може дещо відрізнятися залежно від версії SAP Fiori tools. Використовуйте файл локальних анотацій, створений генератором для OData-сервісу Northwind.
 
-## 2.9.1. Поля Filter Bar
+### 2.9.1. Поля Filter Bar
 
 У файлі `annotation.xml` знайдіть елемент:
 
@@ -411,7 +411,7 @@ webapp/annotations/annotation.xml
 
 ---
 
-## 2.9.2. Колонки List Report
+### 2.9.2. Колонки List Report
 
 Далі необхідно визначити колонки, які відображатимуться в таблиці постачальників на сторінці **List Report**.
 
@@ -469,7 +469,7 @@ webapp/annotations/annotation.xml
 
 ---
 
-# 2.10. Налаштування Object Page постачальника
+## 2.10. Налаштування Object Page постачальника
 
 Наступним кроком налаштуємо сторінку окремого постачальника.
 
@@ -645,7 +645,7 @@ webapp/annotations/annotation.xml
 
 ---
 
-## 2.10.3. Адреса постачальника
+### 2.10.3. Адреса постачальника
 
 Після створеної на попередньому кроці групи GeneralInformation додайте ще одну анотацію UI.FieldGroup з кваліфікатором Address:
 
@@ -683,7 +683,7 @@ webapp/annotations/annotation.xml
 
 ---
 
-## 2.10.4. Формування секцій Object Page
+### 2.10.4. Формування секцій Object Page
 
 Щоб створені `FieldGroup` з'явилися на Object Page, додайте нижче `UI.Facets`:
 
@@ -856,7 +856,7 @@ webapp/annotations/annotation.xml
 </Annotations>
 ```
 
-## 2.12.1. HeaderInfo
+### 2.12.1. HeaderInfo
 
 Додайте після `UI.LineItem`:
 
@@ -879,7 +879,7 @@ webapp/annotations/annotation.xml
 </Annotation>
 ```
 
-## 2.12.2. General Information
+### 2.12.2. General Information
 
 Додайте після `UI.HeaderInfo`:
 
@@ -926,7 +926,7 @@ webapp/annotations/annotation.xml
 </Annotation>
 ```
 
-## 2.12.3. Facets
+### 2.12.3. Facets
 
 Нижче додайте:
 
@@ -962,7 +962,7 @@ Product Object Page
 
 ---
 
-# 2.13. Готовий файл annotation.xml
+## 2.13. Готовий файл annotation.xml
 
 Після виконання всіх попередніх кроків порівняйте отриманий файл із готовим варіантом:
 
@@ -972,7 +972,7 @@ Product Object Page
 
 ---
 
-# 2.14. Перевірка результату
+## 2.14. Перевірка результату
 
 Після завершення налаштування анотацій виконайте Preview ще раз.
 
@@ -1039,7 +1039,7 @@ Suppliers → Supplier → Products → Product
 
 ---
 
-# 2.16. Результат виконання другої частини практичної роботи
+## 2.16. Результат виконання другої частини практичної роботи
 
 У результаті виконання практичної роботи має бути створено та розгорнуто SAP Fiori Elements застосунок **Suppliers App**, який:
 - отримує дані із зовнішнього Northwind OData Service;
