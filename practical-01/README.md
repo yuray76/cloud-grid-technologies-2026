@@ -1094,7 +1094,7 @@ Suppliers → Supplier → Products → Product
 
 ---
 
-### 3.1. Надання повноважень Platform User
+## 3.2. Надання повноважень Platform User
 
 Після створення **Platform User** необхідно надати йому повноваження для доступу до SAP BTP subaccount.
 
@@ -1118,7 +1118,102 @@ Suppliers → Supplier → Products → Product
 
 Після цього користувач `y.yeroshkin@temabit.com` матиме необхідні повноваження для доступу до subaccount та перевірки його налаштувань.
 
-## Структура матеріалів практичної роботи
+---
+
+## 3.3. Створення Business User
+
+Для перевірки опублікованих застосунків у **SAP Build Work Zone** необхідно створити бізнес-користувача:
+
+**yeroshkin.yurii@edu.kpi.ua**
+
+Створення користувача виконується у два етапи:
+
+1. створення користувача в **Custom Identity Provider**;
+2. додавання користувача до SAP BTP subaccount та призначення необхідних **Role Collections**.
+
+### 3.3.1. Створення користувача в Custom Identity Provider
+
+Спочатку необхідно створити користувача в **Custom Identity Provider**, який використовується для автентифікації бізнес-користувачів.
+
+У **SAP BTP Cockpit** відкрийте свій Trial subaccount та перейдіть до:
+
+**Security → Trust Configuration**
+
+У секції **Custom Identity Provider for Applications** виберіть налаштований Identity Provider.
+
+На вкладці **Main Information** у секції **Identity Provider** натисніть **Administration Console**.
+
+<p align="center">
+    <img src="images/22-custom_idp_admin-console.png" alt="Admin console" width="800">
+</p>
+
+Після аунтифікації відкриється **SAP Cloud Identity Services**.
+
+У верхньому меню відкрийте:
+
+**Users & Authorizations → User Management**
+
+<p align="center">
+    <img src="images/23-custom-idp-user-management.png" alt="User Management" width="700">
+</p>
+
+У вікні **User Management** натисніть **Add** 
+
+<p align="center">
+    <img src="images/24-custom-idp-add_user.png" alt="Add User" width="700">
+</p>
+
+та створіть нового користувача:
+
+- **E-mail / Login Name:** `yeroshkin.yurii@edu.kpi.ua`;
+
+- **Initial Password:** `Init@123`.
+
+<p align="center">
+    <img src="images/25-set-user-password.png" alt="Set User Password" width="700">
+</p>
+
+Збережіть користувача та переконайтеся, що він з'явився у списку **User Management**.
+
+Після створення користувача вийдіть із **SAP Cloud Identity Services** та поверніться до **SAP BTP Cockpit**.
+
+> **Важливо:** переконайтеся, що користувач `yeroshkin.yurii@edu.kpi.ua` успішно створений та активний у Custom Identity Provider.
+
+### 3.3.2. Додавання користувача до SAP BTP subaccount
+
+Поверніться до **SAP BTP Cockpit** та відкрийте свій Trial subaccount.
+
+Перейдіть до:
+
+**Security → Users**
+
+Натисніть **Create**.
+
+Під час створення користувача вкажіть:
+
+- **User Name:** `yeroshkin.yurii@edu.kpi.ua`;
+- **E-Mail:** `yeroshkin.yurii@edu.kpi.ua`;
+- **Identity Provider:** ваш **Custom Identity Provider**.
+
+<p align="center">
+    <img src="images/26-bussiness-user.png" alt="Create Business User Password" width="700">
+</p>
+
+Після створення користувача відкрийте його та перейдіть на вкладку:
+
+**Role Collections**
+
+Призначте користувачу наступні колекції ролей:
+- **Business_Application_Studio_Developer**
+- **Business_Application_Studio_Administrator**
+- **CICD Service Administrator**
+- **CICD Service Developer**
+- **HelloWorldDisplayRoleCollection**
+- **Launchpad_Admin**
+
+---
+
+# Структура матеріалів практичної роботи
 
 ```text
 practical-01/
