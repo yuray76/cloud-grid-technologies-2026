@@ -1055,6 +1055,43 @@ Suppliers → Supplier → Products → Product
 
 ---
 
+# Частина 3. Надання доступу для перевірки практичної роботи
+
+Для перевірки результатів виконання практичної роботи необхідно надати викладачу доступ до SAP BTP subaccount та опублікованих у SAP Build Work Zone застосунків.
+Для цього необхідно створити двох користувачів:
+1. **Platform User** — `y.yeroshkin@temabit.com`;
+2. **Business User** — `yeroshkin.yurii@edu.kpi.ua`.
+
+## 3.1. Створення Platform User
+
+**Platform User** використовується для доступу до SAP BTP Cockpit та перевірки налаштувань subaccount, створених сервісів і розгорнутих застосунків.
+
+Відкрийте свій **SAP BTP Trial subaccount**.
+
+У лівому меню перейдіть до:
+
+**Security → Users**
+
+Натисніть **Create**.
+
+<!-- SCREENSHOT: Security → Users та кнопка Create -->
+
+У формі створення користувача вкажіть:
+
+- **User Name:** `y.yeroshkin@temabit.com`
+
+- **E-Mail:** `y.yeroshkin@temabit.com`
+
+- **Identity Provider:** стандартний Identity Provider вашого SAP BTP Trial account.
+
+Після заповнення даних натисніть **Create**.
+
+<!-- SCREENSHOT: створення Platform User -->
+
+Переконайтеся, що користувач `y.yeroshkin@temabit.com` з'явився у списку **Platform Users**.
+
+> **Важливо:** створення користувача ще не надає йому необхідних прав для перевірки практичної роботи. На наступному кроці необхідно призначити відповідні **Role Collections**.
+
 ## Структура матеріалів практичної роботи
 
 ```text
