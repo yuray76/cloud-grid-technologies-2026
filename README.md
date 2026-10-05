@@ -6,18 +6,20 @@
 ## Практичні роботи
 
 ### Практична робота №1
-**Створення SAP Fiori Elements застосунку на основі OData-сервісу**
+**Створення та розгортання SAP Fiori застосунків у SAP Business Technology Platform**
 
 У практичній роботі розглядається:
-- створення Destination у SAP BTP;
-- створення SAP Fiori Elements застосунку в SAP Business Application Studio;
-- підключення до публічного OData-сервісу Northwind;
-- використання локальних OData-анотацій;
-- налаштування List Report та Object Page;
-- робота з пов'язаними сутностями;
-- тестування застосунку;
-- build та deploy застосунку в SAP BTP;
-- інтеграція застосунку із SAP Build Work Zone.
+
+- підготовка середовища **SAP BTP Trial** для HTML5-розробки;
+- створення тестового застосунку **Hello World** у SAP Business Application Studio;
+- робота з **Git та GitHub**;
+- налаштування **CI/CD** та розгортання застосунку в SAP BTP;
+- публікація застосунку в **SAP Build Work Zone**;
+- створення власного SAP Fiori Elements застосунку **Suppliers**;
+- підключення до публічного OData-сервісу **Northwind**;
+- налаштування **List Report** та **Object Page** за допомогою OData-анотацій;
+- робота з пов'язаними сутностями **Suppliers** та **Products**;
+- розгортання та публікація застосунку **Suppliers** у SAP Build Work Zone.
 
 [Перейти до практичної роботи №1](./practical-01/README.md)
 
