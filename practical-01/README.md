@@ -130,6 +130,7 @@
 
 > **Примітка:** у SAP Mission ці кроки позначені як *Optional*, однак у межах практичної роботи їх виконання є обов'язковим.
 
+
 Результат виконання пункту 1.4 наведено на скріншоті нижче.
 <p align="center">
     <img src="images/04-cicd-jobs.png" alt="Continuous Integration and Delivery" width="800">
