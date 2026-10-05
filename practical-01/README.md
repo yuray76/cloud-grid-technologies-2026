@@ -119,6 +119,10 @@
 
 **Set Up Additional Features**
 
+<p align="center">
+    <img src="images/19-additional-features.png" alt="Helloworld App" width="800">
+</p>
+
 Виконайте два кроки:
 
 1. **Enable Git and Add a Remote Repository** — налаштуйте Git для проєкту та підключіть віддалений репозиторій GitHub.
