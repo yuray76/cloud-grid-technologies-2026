@@ -1074,7 +1074,9 @@ Suppliers → Supplier → Products → Product
 
 Натисніть **Create**.
 
-<!-- SCREENSHOT: Security → Users та кнопка Create -->
+<p align="center">
+    <img src="images/20-default-idp-user.png" alt="Preview Application 6" width="300">
+</p>
 
 У формі створення користувача вкажіть:
 
@@ -1082,11 +1084,9 @@ Suppliers → Supplier → Products → Product
 
 - **E-Mail:** `y.yeroshkin@temabit.com`
 
-- **Identity Provider:** стандартний Identity Provider вашого SAP BTP Trial account.
+- **Identity Provider:** Default identity provider вашого SAP BTP Trial account.
 
 Після заповнення даних натисніть **Create**.
-
-<!-- SCREENSHOT: створення Platform User -->
 
 Переконайтеся, що користувач `y.yeroshkin@temabit.com` з'явився у списку **Platform Users**.
 
