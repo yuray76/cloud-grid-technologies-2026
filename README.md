@@ -81,11 +81,7 @@ cloud-grid-technologies-2026/
 │   └── images/
 │
 ├── practical-02/
-│   ├── README.md
-│   ├── resources/
-│   └── images/
+│   └── README.md
 │
 └── practical-03/
-    ├── README.md
-    ├── resources/
-    └── images/
+    └── README.md
